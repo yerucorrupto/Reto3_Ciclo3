@@ -37,12 +37,12 @@ export default {
   },
   methods: {
     init: function(){
-      this.$router.push({  name:"inicio"})
+      this.$router.push({ name:"nada"})
     },
     buscar_reserva: function (){
       if(this.$route.name != "consultar"){
         //let idReserva = localStorage.getItem("current_id_reserva")
-        this.$router.push({  name:"consultar",
+        this.$router.push({ name:"consultar",
           //params:{idReserva:idReserva}})
         });
       }
