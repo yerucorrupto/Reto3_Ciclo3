@@ -48,7 +48,8 @@
   				"Celular": this.celular, "Email": this.correo, "FechaIngreso": this.fecha_llegada,
   				"FechaSalida": this.fecha_salida, "NumPersonas": this.num_personas,
   				"FechaReserva": Date.now()}
-  				axios.post("http://127.0.0.1:8000/hacer_reserva/", json)
+  				//axios.post("http://127.0.0.1:8000/hacer_reserva/", json)
+  				axios.post("https://dummyhotel.herokuapp.com/hacer_reserva/", json)
   				.then(respuesta => {
   					alert(respuesta.data.FechaReserva);
   				})
