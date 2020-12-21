@@ -6,6 +6,7 @@
           <button v-on:click = "init"> Inicio </button>
           <button v-on:click = "crear_reserva"> Crear Reserva </button>
           <button v-on:click = "buscar_reserva"> Consultar Reserva </button>
+          <button v-on:click = "modificar_reserva">Modificar Reserva</button>
           <button> Cerrar Sesión</button>
         </nav>
       </div>
@@ -50,6 +51,13 @@ export default {
     crear_reserva: function(){
       if (this.$route.name != "crear") {
         this.$router.push({ name: "crear",
+          //params:{dato:"Soy un dato que vengo de el componente raiz"}
+        });
+      }
+    },
+    modificar_reserva: function(){
+      if (this.$route.name != "modificar") {
+        this.$router.push({ name: "modificar",
           //params:{dato:"Soy un dato que vengo de el componente raiz"}
         });
       }

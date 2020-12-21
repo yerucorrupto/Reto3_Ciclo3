@@ -65,7 +65,8 @@
 				self.NumPersonas = result.data.NumPersonas
 			})
 			.catch((error) => {
-				alert("ERROR Servidor");
+				//alert("ERROR Servidor");
+				alert(error.response.data.detail);
 			});
 		}
 		}

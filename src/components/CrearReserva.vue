@@ -54,7 +54,7 @@
   					alert(respuesta.data.FechaReserva);
   				})
   				.catch(error => {
-  					alert("Error en el servidor");
+  					alert(error.response.data.detail);
         		});
   			}
   		},
